@@ -9,7 +9,7 @@ if(process.env.MRT_ENV == 'production') {
 
 Nodetime = Npm.require('nodetime').profile({
     accountKey: accountKey,
-    appName: 'Arriva Intranet'
+    appName: 'Intranet'
 });
 
 console.log('Nodetime loaded', accountKey, (process.env.MRT_ENV ? process.env.MRT_ENV : 'No environment'));
