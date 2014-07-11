@@ -1,5 +1,5 @@
 
-if (typeof Meteor.config.nodetimeApiKey !== "undefined") {
+if (typeof Meteor.config.nodetimeApiKey !== "undefined" && Meteor.config.nodetimeApiKey !== '') {
     Nodetime = Npm.require('nodetime').profile({
         accountKey: Meteor.config.nodetimeApiKey,
         appName: 'Nodetime'
